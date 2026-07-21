@@ -26,6 +26,7 @@ printf("int size: %zu bytes\n", sizeof(int)); // Outputs: 4
 ```c
 int roll;
 scanf("%d", &roll); // '&' is MANDATORY
+```
 
 ## 4. Input Buffer Clearing Trick ⚠️ (CRITICAL)
 
@@ -44,14 +45,18 @@ while (getchar() != '\n'); // Clears leftover '\n' from memory buffer
 * **`getchar()`:** কিবোর্ড থেকে একটি মাত্র ক্যারেক্টার গ্রহণ করে।
 ```c
 char grade = getchar();
+```
 
  * putchar(): স্ক্রিনে একটি মাত্র ক্যারেক্টার দ্রুত প্রিন্ট করে (printf-এর চেয়ে ফাস্ট)।
 
 ```C
 putchar(grade);
+```
 
 ## 6. Manual Compile & Run (Terminal Command)
 Code Runner ছাড়া লিনাক্স টার্মিনালে সরাসরি রান করার ফাস্ট কমান্ড:
 
 ```bash
 gcc filename.c -o app && ./app
+```
+
