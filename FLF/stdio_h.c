@@ -1,25 +1,27 @@
 #include <stdio.h>
+#include <ctype.h>
 
-int main() {
+int main()
+{
+    char section;
+    printf("Please, enter your section: ");
+    section = getchar();
+    printf("You typed: %c\n", section);
+    putchar(toupper(section));
+
+    char name[50];
     int roll;
-    char grade;
+    int age;
 
-    // printf এবং scanf এর ব্যবহার
-    printf("আপনার রোল নম্বর লিখুন: ");
+    printf("Please, Write your name here without any space: ");
+    scanf("%s", name);
+    printf("your name is %s\n", name);
+
+    printf("Please, Write your roll here: ");
     scanf("%d", &roll);
-    
-    // বাফার ক্লিয়ার করার জন্য (scanf এর পর getchar ব্যবহারের আগে এটি প্রয়োজন হয়)
-    while (getchar() != '\n'); 
+    printf("your role is %d\n", roll);
 
-    // getchar এবং putchar এর ব্যবহার
-    printf("আপনার গ্রেড (A/B/C) লিখুন: ");
-    grade = getchar();
-
-    printf("\n--- ফলাফল ---\n");
-    printf("রোল নম্বর: %d\n", roll);
-    printf("প্রাপ্ত গ্রেড: ");
-    putchar(grade);
-    printf("\n");
-
-    return 0;
+    printf("please enter your age: ");
+    scanf("%d", &age);
+    printf("You typed for age: %d\n", age);
 }
