@@ -29,7 +29,7 @@
 **সময়ের ধারণা:** ১-২ সপ্তাহ
 
 **যা শিখবেন:**
-- Arithmetic, relational, logical, ternary operator (আপনার নোটে C vs JS পার্থক্য নিয়ে যা লিখেছেন, সেটার প্র্যাকটিক্যাল প্রয়োগ)
+- Arithmetic, relational, logical, ternary operator <!-- (আপনার নোটে C vs JS পার্থক্য নিয়ে যা লিখেছেন, সেটার প্র্যাকটিক্যাল প্রয়োগ) -->
 - `if-else`, `switch-case`
 - `for`, `while`, `do-while` লুপ, আর `break`/`continue`
 
