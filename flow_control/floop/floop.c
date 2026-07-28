@@ -7,7 +7,7 @@ int main()
     scanf("%d", &num);
 
     // for loop terminates when count exceeds num
-    for(count = 2; count<=num; ++count)
+    for (count = 2; count <= num; count += 2)
     {
         sum += count;
     }
