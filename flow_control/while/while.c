@@ -50,6 +50,10 @@ int main()
     {
         printf("Login Succeed!\n");
     }
+    else
+    {
+        printf("Too many attempts. Login Failed!\n");
+    }
 
     return 0;
 }
