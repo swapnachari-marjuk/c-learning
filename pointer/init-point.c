@@ -2,18 +2,24 @@
 
 int main()
 {
-    double expected_salary = 567.00;
-    double double_salary = expected_salary * 2;
+    int var1 = 30, var2 = 40, temp;   // var declare.
+    int *ptr1 = &var1, *ptr2 = &var2; // declare a ptr for storing var1's memory location.
 
-    double* ptr_ex_salary = &expected_salary;
-    *ptr_ex_salary = 789.00;
+    int sum_by_ptr = *ptr1 + *ptr2;
 
-    printf("Your expected salary: %f\n", expected_salary); // 789.00 will be print. because pointer changed its value.
+    printf("value of var1 is %d\n", var1);     // printing var1 value.
+    printf("location of var1 is %p\n", &var1); // printing var1 memory location.
 
-    printf("Your exact salary is: %f\n", double_salary); // = of 567*2 will be print. because this multiplication was done before changing the ex salary value.
-    
-    printf("%p\n", ptr_ex_salary); //will print address of variable.
+    printf("value of var1 is %d\n", *ptr1);   // also printing var1 value by using ptr1 pointer.
+    printf("location of var1 is %p\n", ptr1); // also printing var1 memory location by using ptr1 pointer.
 
+    printf("sum of 2 vars is: %d\n", sum_by_ptr);
+
+    temp = *ptr1;
+    *ptr1 = *ptr2;
+    *ptr2 = temp;
+
+    printf("After swap var1 = %d and var2 = %d.\n", var1, var2);
 
     return 0;
 }
